@@ -54,11 +54,11 @@ export function Login() {
       </div>
       <div className="hidden bg-muted lg:block">
         <img
-          src="/placeholder.svg"
+          src="/logo_1.svg"
           alt="Image"
           width="1920"
           height="1080"
-          className="h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          className="h-full w-full object-contain dark:brightness-[0.2] dark:grayscale"
         />
       </div>
     </div>
