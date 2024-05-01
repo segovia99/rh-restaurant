@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { MainNav } from "../components/layout/main-nav";
 import { Search } from "../components/layout/search";
 import { UserNav } from "../components/layout/user-nav";
 import TeamSwitcher from "../components/layout/team-switcher";
 
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <main>
       <div className="hidden flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
@@ -36,7 +34,7 @@ export default function RootLayout({
         {children}
         </div>
       </div>
-        </body>
+        </main>
     </html>
   );
 }
