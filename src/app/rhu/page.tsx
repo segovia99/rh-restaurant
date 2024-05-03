@@ -37,7 +37,7 @@ export default function rhuPage() {
           </div>
         </div>
       </div>
-      <div className="col-span-2 grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8">
         <div>
           <Card title="Inicio del periodo" value="1/5/2024"/>
         </div>

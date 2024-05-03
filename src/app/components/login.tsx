@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -99,7 +100,7 @@ export function Login() {
         </div>
       </div>
       <div className="hidden bg-muted lg:block">
-        <img
+        <Image
           src="/logo_1.svg"
           alt="Image"
           width="1920"

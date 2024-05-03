@@ -1,7 +1,7 @@
 import { MainNav } from "../components/layout/main-nav";
 import { Search } from "../components/layout/search";
 import { UserNav } from "../components/layout/user-nav";
-import TeamSwitcher from "../components/layout/team-switcher";
+import Image from "next/image"
 
 
 
@@ -17,7 +17,9 @@ export default function RootLayout({
       <div className="hidden flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            <TeamSwitcher />
+            <div>
+              <Image src="/logo_1.svg" width={64} height={64} alt="not" />
+            </div>
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />

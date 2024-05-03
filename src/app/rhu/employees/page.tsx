@@ -15,22 +15,22 @@ import {
 
 export default function EmployeesPage() {
   return (
-    <div className="grid grid-cols-1 gap-4">
-      <div className="grid grid-cols-3 gap-4 lg:span-row-2">
-        <div className="grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-3 gap-8 lg:span-row-2">
+        <div className="grid grid-cols-1 gap-8">
           <div>
-            <div className="border rounded-[10px] p-8 mb-4 shadow-md">
-              <Image src="/logo_1.svg" alt="profile" width={360} height={360} className="rounded-md object-cover" />
+            <div className="border rounded-[10px] p-8 mb-4 shadow-sm">
+              <h2>Espacio para la foto del empleado</h2>
             </div>
-            <div className="border rounded-[10px] p-8 shadow-md">
+            <div className="border rounded-[10px] p-8 shadow-sm">
               <Label>Nombre empleado</Label>
               <h2>John Carl</h2>
             </div>
           </div>
         </div>
         
-        <div className="col-span-2 grid grid-cols-4 gap-4">
-          <div className="col-span-2 p-8 rounded-[10px] shadow border">
+        <div className="col-span-2 grid grid-cols-4 gap-8">
+          <div className="col-span-2 p-8 rounded-[10px] shadow-sm border">
             <div>
               <h3 className="text-lg font-medium">Información del Empleado</h3>
               <p className="text-sm text-muted-foreground">Información personal de empleado a agregar o modificar</p>
@@ -52,7 +52,7 @@ export default function EmployeesPage() {
             </form>
           </div>
 
-          <div className="col-span-2 p-8 rounded-[10px] shadow border">
+          <div className="col-span-2 p-8 rounded-[10px] shadow-sm border">
             <form action="" className="mt-8">
               <label className="text-sm font-medium">Fecha de nacimiento</label>
               <Input className="mt-2 mb-8" type="date" />
@@ -89,7 +89,7 @@ export default function EmployeesPage() {
         </div>
       </div>
 
-      <div className="shadow-md rounded-[10px] border pb-4">
+      <div className="shadow-sm rounded-[10px] border pb-4">
         <Table className="border-b">
           <TableCaption>Empleados en el sistema</TableCaption>
           <TableHeader>
