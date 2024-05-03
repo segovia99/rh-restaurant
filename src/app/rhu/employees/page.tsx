@@ -98,6 +98,7 @@ export default function EmployeesPage() {
               <TableHead>Nombre completo</TableHead>
               <TableHead>Fecha de ingreso</TableHead>
               <TableHead className="text-right">Salario mensual</TableHead>
+              <TableHead>Controles</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -106,12 +107,20 @@ export default function EmployeesPage() {
               <TableCell>John</TableCell>
               <TableCell>20-5-2024</TableCell>
               <TableCell className="text-right">$400.00</TableCell>
+              <TableCell className="flex gap-2">
+                <Image className="cursor-pointer" src="/edit_icon.svg" alt="icon" width={30} height={30}></Image>
+                <Image className="cursor-pointer" src="/delete_icon.svg" alt="icon" width={30} height={30}></Image>
+              </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">0000000-00</TableCell>
               <TableCell>Elain</TableCell>
               <TableCell>19-5-2024</TableCell>
               <TableCell className="text-right">$520.00</TableCell>
+              <TableCell className="flex gap-2">
+                <Image className="cursor-pointer" src="/edit_icon.svg" alt="icon" width={30} height={30}></Image>
+                <Image className="cursor-pointer" src="/delete_icon.svg" alt="icon" width={30} height={30}></Image>
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>

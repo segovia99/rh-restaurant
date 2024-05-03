@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -54,11 +55,19 @@ export default function PeriodsPage() {
                 <TableCell>0</TableCell>
                 <TableCell className="font-medium">20-02-2024</TableCell>
                 <TableCell>20-5-2024</TableCell>
+                <TableCell className="flex gap-2">
+                  <Image className="cursor-pointer" src="/edit_icon.svg" alt="icon" width={30} height={30}></Image>
+                  <Image className="cursor-pointer" src="/delete_icon.svg" alt="icon" width={30} height={30}></Image>
+                </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>1</TableCell>
                 <TableCell className="font-medium">20-02-2024</TableCell>
                 <TableCell>20-5-2024</TableCell>
+                <TableCell className="flex gap-2">
+                  <Image className="cursor-pointer" src="/edit_icon.svg" alt="icon" width={30} height={30}></Image>
+                  <Image className="cursor-pointer" src="/delete_icon.svg" alt="icon" width={30} height={30}></Image>
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
